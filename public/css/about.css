@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+:root {
+  --white:#fff;
+  --main-color:#222222;
+  --sub-black:rgb(0, 0, 0);
+  --sm-text:0.8vw;
+  --sm-width:750px;
+  --container-bottom:50px;
+  --copy-right-color:rgb(168, 168, 168);
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  word-wrap: break-word;
+}
+
+.up span {
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  padding: 6px 10px 6px 10px;
+  bottom: 5%;
+  right: 5%;
+  color: #380000;
+  background-color: rgba(212, 212, 212, 0.3);
+  cursor: pointer;
+}
+
+header {
+  z-index: 100;
+  width: 100%;
+}
+header .container h3 {
+  display: inline;
+  margin: 0;
+  line-height: 70px;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+header .container .headB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .container .headB a {
+  display: block;
+  padding: 15px;
+  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+header .container .headB a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .headB ul {
+    display: flex;
+    max-width: 1000px;
+  }
+  header .headC {
+    display: none;
+  }
+  header .headB {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  header .container-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .headC {
+    margin-right: 10px;
+    padding: 0;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  header .headB {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .open .menu {
+    z-index: 100;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: all .5s;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu {
+    color: #fff;
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .menu ul {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .menu li {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .menu li:hover {
+    color: #999;
+  }
+  .menu li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+  }
+  .menu li a:hover {
+    background-color: none;
+  }
+}
+.conA .container {
+  margin: 30px 30px 60px 30px;
+}
+.conA .container h3 {
+  padding-left: 0.5rem;
+  border-left: solid 0.7rem #530000;
+}
+.conA .container h4 {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.8;
+  text-decoration: none;
+}
+.conA .container p {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.8;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .conA {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.conB .container {
+  margin: 30px 30px 60px 30px;
+}
+.conB .container h3 {
+  padding-left: 0.5rem;
+  border-left: solid 0.7rem #530000;
+}
+.conB .container tr {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.8;
+  text-decoration: none;
+}
+.conB .container tr th {
+  padding-right: 1rem;
+  text-align: left;
+  word-break: keep-all;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.conB .container tr td {
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+}
+@media screen and (min-width: 768px) {
+  .conB {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.conC .container {
+  margin: 30px 30px 60px 30px;
+}
+.conC .container h3 {
+  padding-left: 0.5rem;
+  border-left: solid 0.7rem #530000;
+}
+.conC .container p {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.8;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .conC {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.conD {
+  z-index: 0;
+}
+.conD .container {
+  margin: 30px 30px 60px 30px;
+}
+.conD .container h3 {
+  padding-left: 0.5rem;
+  border-left: solid 0.7rem #530000;
+}
+.conD .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.conD .container ul a {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.8;
+  text-decoration: none;
+  text-decoration: none;
+}
+.conD .container ul a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .conD {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.conE .container {
+  margin: 30px 30px 60px 30px;
+}
+.conE .container h3 {
+  padding-left: 0.5rem;
+  border-left: solid 0.7rem #530000;
+}
+.conE .container tr {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.conE .container tr a {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.8;
+  text-decoration: none;
+  text-decoration: none;
+}
+.conE .container tr a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .conE {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  height: 120px;
+}
+footer p {
+  padding-top: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: xx-small;
+}
+
+/*# sourceMappingURL=about.css.map */

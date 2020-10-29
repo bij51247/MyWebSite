@@ -1,0 +1,51 @@
+@import './commom';
+
+
+body{
+  @include base();
+}
+
+header{
+  @include header();
+}
+
+@media (max-width:767px){
+  @include menu();
+}
+.up{
+  @include up-style();
+}
+
+
+.conA{
+  .container{
+    // @include container-margin();
+    margin: 80px auto;
+    width: 70%;
+    position: relative;
+    @include pre();
+    .photo{
+      border: solid 1px #380000;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  @include large_container_width();
+}
+
+.conB{
+  .container{
+    @include container-margin();
+    @include works_text();
+  }
+
+  @include large_container_width();
+
+}
+
+
+
+footer{
+  @include footer();
+}

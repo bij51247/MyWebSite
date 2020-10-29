@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+:root {
+  --white:#fff;
+  --main-color:#222222;
+  --sub-black:rgb(0, 0, 0);
+  --sm-text:0.8vw;
+  --sm-width:750px;
+  --container-bottom:50px;
+  --copy-right-color:rgb(168, 168, 168);
+}
+
+#defaultCanvas0 {
+  position: fixed;
+  top: 0;
+  z-index: -10;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  word-wrap: break-word;
+}
+
+header .container {
+  margin: 5vw;
+}
+header .container h3 {
+  margin-bottom: 40px;
+}
+header .container ul {
+  list-style: none;
+}
+header .container ul li {
+  margin-bottom: 30px;
+}
+header .container ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*# sourceMappingURL=index.css.map */

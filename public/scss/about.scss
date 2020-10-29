@@ -1,0 +1,137 @@
+@import './commom';
+body{
+  @include base();
+}
+
+.up{
+  @include up-style();
+}
+
+header{
+  @include header();
+}
+
+@media (max-width:767px){
+  @include menu();
+}
+
+
+.conA{
+  .container{
+  
+    @include container-margin();
+    h3{
+      @include line();
+    }
+    h4{
+      @include lines();
+    }
+    p{
+      @include lines();
+    }
+  }
+  @include mq{
+    @include large_container_width();
+  }
+}
+
+.conB{
+
+  .container{
+    @include container-margin();
+    h3{
+      @include line();
+    }
+    tr{
+      @include lines();
+      $line-height:0.4rem;
+      th{
+        padding-right: 1rem;
+        text-align: left;
+        word-break: keep-all;
+        padding-top: $line-height;
+        padding-bottom:$line-height;
+      }
+      td{
+        padding-bottom:$line-height;
+        padding-top: $line-height;
+      }
+    }
+  }
+  
+    @include mq(){
+      @include large_container_width();
+  }
+}
+
+.conC{
+  .container{
+    @include container-margin();
+    h3{
+      @include line();
+    }
+    p{
+      @include lines();
+    }
+  }
+
+  @include mq(){
+    @include large_container_width();
+  }
+}
+
+.conD{
+  z-index: 0;
+  .container{
+    @include container-margin();
+    h3{
+      @include line();
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      a{
+        @include lines();
+        text-decoration: none;
+        &:hover{
+            color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+  }
+  @include mq(){
+    @include large_container_width();
+  }
+}
+
+.conE{
+  .container{
+    @include container-margin();
+       h3{
+      @include line();
+    }
+    tr{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      a{
+        @include lines();
+        text-decoration: none;
+        &:hover{
+            color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+  @include mq(){
+    @include large_container_width();
+  }
+}
+
+
+footer{
+  @include footer();
+}
+
